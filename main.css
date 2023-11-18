@@ -1,0 +1,121 @@
+@font-face {
+    font-family: "clockicons";
+    src: url("https://db.onlinewebfonts.com/t/84cb021d5f9af287ffff84b61beef6dc.eot");
+    src: url("https://db.onlinewebfonts.com/t/84cb021d5f9af287ffff84b61beef6dc.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/84cb021d5f9af287ffff84b61beef6dc.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/84cb021d5f9af287ffff84b61beef6dc.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/84cb021d5f9af287ffff84b61beef6dc.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/84cb021d5f9af287ffff84b61beef6dc.svg#clockicons")format("svg");
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "clockicons";
+    background-color: #F0F0F0;
+    overflow-x: hidden;
+}
+
+.main-container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 80px;
+    width: 100%;
+    background-color: #0090DD;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 70px;
+}
+
+.time {
+    margin: 0 auto;
+    height: 450px;
+    width: 70%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 40px;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+
+/* .time .etime {
+    font-size: 6rem !important;
+    margin-bottom: 50px;
+    
+} */
+
+.time .date {
+    font-size: 2rem !important;
+    display: flex;
+    justify-content: center;
+    color: #4AAE71 !important;
+    font-weight: 400;
+}
+
+#time {
+    font-size: 7rem;
+    margin-top: 80px;
+}
+
+.time button{
+    width: 180px;
+    background-color: #4AAE71;
+    font-size: 18px;
+    color: #fff;
+    padding: 7px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+.time button:hover{
+    background-color: #75D16E;
+}
+
+
+/* 
+namaz-container */
+
+
+.namaz-container{
+    width: 1280px;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #EEF1ED;
+}
+
+.nheader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 55px 10px;
+    background-color: #fff;
+    width: 100%;
+    height: 60px;
+    font-family: monospace;
+}
+
+.nheader img{
+    height: 80px;
+}
+
+.namaz-container span{
+    color: #008000;
+}
