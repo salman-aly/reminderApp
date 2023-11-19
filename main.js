@@ -22,9 +22,21 @@ dateClock.innerHTML = `
   <div><h2>${date}</h2></div>
 `;
 
-function nTime() {
-  let Div = document.querySelector(".main-container");
-  Div.style.display = "none"
+let Div = document.querySelector(".namaz-time");
+let div = document.querySelector(".task-container");
+
+function hideNamz() {
+  let hide = document.querySelector(".namaz-time");
+  hide.style.display = "none"
+  let show = document.querySelector(".task-container");
+  show.style.display = "flex"
+}
+
+function hideTask() {
+  let show = document.querySelector(".namaz-time");
+  show.style.display = "block"
+  let hide = document.querySelector(".task-container");
+  hide.style.display = "none"
 }
 
 
@@ -41,4 +53,15 @@ const targetTimeString = targetDate.toLocaleTimeString('en-US', { hour12: true }
 if (now.getTime() === targetDate.getTime()) {
   alert(`Current time (${currentTimeString}) is equal to or later than target time (${targetTimeString}). Wake up!`);
 }
+
+
+let post = document.getElementById("postedPost");
+
+function createPost() {
+  let posted = document.getElementById("postedPost");
+  posted.innerHTML += `
+  <h4>${post.value}</h4>
+ `
+}
+
 

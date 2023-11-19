@@ -31,11 +31,11 @@
         </p>
 
         <div class="task-nam-btn">
-          <div class="task">
-            <button>Create Reminders</button>
-          </div>
           <div class="namz">
-            <button>Namaz Reminders</button>
+            <button onclick="hideTask()">Namaz Reminders</button>
+          </div>
+          <div class="task">
+            <button onclick="hideNamz()">Create Reminders</button>
           </div>
         </div>
       </div>
@@ -51,12 +51,12 @@
             <h2><span>05:32</span></h2>
           </div>
           <div class="container">
-            <h2>ZHUR</h2>
+            <h2>ZHAR</h2>
             <h2><span>12:17</span></h2>
           </div>
           <div class="container">
             <h2>ASR</h2>
-            <h2><span>15:22</span></h2>
+            <h2><span>16:22</span></h2>
           </div>
           <div class="container">
             <h2>MAGHRIB</h2>
@@ -65,6 +65,22 @@
           <div class="container">
             <h2>ISHA'A</h2>
             <h2><span>19:03</span></h2>
+          </div>
+        </div>
+      </div>
+      <div class="task-container">
+        <img src="images/todo-list-wizard.png" alt="" />
+        <div class="date-task">
+          <div>
+            <input type="datetime-local" />
+            <input
+              type="text"
+              name=""
+              id="postedPost"
+              placeholder="Create your next task here.." />
+          </div>
+          <div class="postBtn">
+            <button onclick="createPost()">Create</button>
           </div>
         </div>
       </div>

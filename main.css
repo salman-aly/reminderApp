@@ -136,20 +136,21 @@ namaz-container */
 }
 
 .task-nam-btn button {
-    height: 40px;
-    font-size: 18px;
+    height: 45px;
+    font-size: 17px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 25px;
     border: none;
-    background-color: #008000;
+    background-color: #056a2c;
     color: #fff;
-    padding: 10px 15px;
+    padding: 10px 25px;
     margin-top: 20px;
     margin-bottom: 60px;
 }
 
 .task-nam-btn button:hover {
-    background-color: #056a2c;
+
+    background-color: #008000;
 }
 
 .namaz-time {
@@ -157,12 +158,20 @@ namaz-container */
     height: 250px;
     width: 90%;
     font-family: 'EB Garamond' !important;
-    margin-bottom: 200px;
+    margin-bottom: 80px;
 }
 
-.namaz-time .date-js{
+.wave {
+    background-image: url(images/wwave.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.namaz-time .date-js {
     font-size: 18px;
 }
+
 .namaz-time .flex {
     display: flex;
     justify-content: space-between;
@@ -193,10 +202,60 @@ namaz-container */
     border-radius: 5px;
 }
 
-.container h2{
+.container h2 {
     font-size: 17px;
 }
 
-.container span{
+.container span {
     font-family: "clockicons";
+}
+
+
+.task-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    background-image: url(images/use.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 1280px;
+    display: none;
+}
+
+.task-container img {
+    height: 650px;
+}
+
+.date-task input{
+    height: 40px;
+    width: 300px;
+    outline: none;
+    border: 2px solid #008000;
+    border-radius: 25px;
+    padding: 0px 15px;
+    font-size: 16px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.postBtn button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    margin: 0 auto;
+    font-size: 18px;
+    background-color: #056a2c;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.postBtn button:hover{
+    background-color: #008000;
 }
