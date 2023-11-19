@@ -3,32 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/unnamed.png" type="image/x-icon" />
     <link rel="stylesheet" href="main.css" />
-    <title>Document</title>
+    <title>Prayer Reminder - SA</title>
   </head>
   <body>
-    <div class="main-container">
-      <div class="header">
-        <div class="logo">
-          <img src="images/Alarm_1941_Logo_001.svg.png" alt="" />
-        </div>
-        <div class="signout">
-          <button>Sign Out</button>
-        </div>
+    <div class="namaz-container">
+      <div class="nheader">
+        <img src="images/unnamed.png" alt="" />
+        <h1>Salah - <span>Prayer Reminder</span></h1>
       </div>
       <div class="time">
         <div class="currentDate">
           <div id="time"></div>
           <div id="date"></div>
         </div>
-
-        <button onclick="nTime()">Namaz Time</button>
       </div>
-    </div>
-    <div class="namaz-container">
-      <div class="nheader">
-        <img src="images/unnamed.png" alt="" />
-        <h1>Salah - <span>Prayer Reminder</span></h1>
+      <div class="prayer-txt">
+        <h2>
+          Make prayer a <br />
+          lifestyle.
+        </h2>
+        <p>
+          Get gentle prayer reminders that will transform your prayer life,
+          restore your focus on the present moment and awaken a closeness to
+          "Allah" during your everyday life.
+        </p>
+
+        <div class="task-nam-btn">
+          <div class="task">
+            <button>Create Reminders</button>
+          </div>
+          <div class="namz">
+            <button>Namaz Reminders</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="namaz-time">
+        <div class="flex">
+          <h1>PRAYER TIMES IN <span>KARACHI</span></h1>
+          <div class="date-js" id="date-js"></div>
+        </div>
+        <div class="namz-time-cont">
+          <div class="container">
+            <h2>FAJR</h2>
+            <h2><span>05:32</span></h2>
+          </div>
+          <div class="container">
+            <h2>ZHUR</h2>
+            <h2><span>12:17</span></h2>
+          </div>
+          <div class="container">
+            <h2>ASR</h2>
+            <h2><span>15:22</span></h2>
+          </div>
+          <div class="container">
+            <h2>MAGHRIB</h2>
+            <h2><span>17:44</span></h2>
+          </div>
+          <div class="container">
+            <h2>ISHA'A</h2>
+            <h2><span>19:03</span></h2>
+          </div>
+        </div>
       </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>

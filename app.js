@@ -46,7 +46,7 @@ function login() {
     }
     else if (userName == signUpUsername && passWord == userPassword) {
         alert("Login successfull!")
-        window.location.href = "post.html"
+        window.location.href = "main.html"
     } else {
         Swal.fire({
             icon: 'error',
