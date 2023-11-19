@@ -72,17 +72,19 @@
         <img src="images/todo-list-wizard.png" alt="" />
         <div class="date-task">
           <div>
-            <input type="datetime-local" />
+            <input type="datetime-local" id="timedate" />
             <input
               type="text"
               name=""
-              id="postedPost"
+              id="inputValue"
               placeholder="Create your next task here.." />
           </div>
           <div class="postBtn">
             <button onclick="createPost()">Create</button>
           </div>
         </div>
+      </div>
+      <div class="postedPost" id="postedPost">
       </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
