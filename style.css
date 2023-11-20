@@ -287,6 +287,7 @@ a:-webkit-any-link {
         height: 500px;
         width: 300px;
         display: flex;
+        margin-top: 65px;
         align-items: center;
         justify-content: center;
         flex-direction: column;
