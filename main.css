@@ -347,14 +347,14 @@ namaz-container */
     }
 
     .task-nam-btn button {
-        height: 60px;
+        height: 70px;
         font-size: 28px;
         cursor: pointer;
-        border-radius: 25px;
+        border-radius: 5px;
         border: none;
         background-color: #056a2c;
         color: #fff;
-        padding: 10px 25px;
+        padding: 10px 45px;
         margin-top: 20px;
         margin-bottom: 20px;
     }
@@ -423,11 +423,11 @@ namaz-container */
         justify-content: center;
         flex-direction: column;
         padding-top: 30px;
-        background-image: url(images/use.svg);
+        background-image: none;
         background-size: contain;
         background-repeat: no-repeat;
         background-position: bottom;
-        width: unset !important;
+        width: 100% !important;
         display: none;
     }
 
@@ -437,11 +437,62 @@ namaz-container */
         width: unset;
     }
 
+    .time-date-flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
 
+    .ml {
+        margin-left: unset;
+    }
 
+    .postBtn button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 280px;
+        margin: 0 auto;
+        font-size: 32px !important;
+        background-color: #008000 !important;
+        cursor: pointer;
+        color: #ffff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+    }
 
+    .postBtn button:hover{
+        background-color: #008000;
+        color: #fff;
+    }
+    .task-container img {
+        height: 500px;
+        margin-left: unset;
+        display: none;
+    }
 
+    .date-task input {
+        height: 53px;
+        width: 390px;
+        outline: none;
+        border: 2px solid #008000;
+        border-radius: 5px;
+        padding: 10px 15px;
+        font-size: 24px;
+        text-transform: capitalize;
+        margin-bottom: 40px;
+        cursor: pointer;
+    }
 
+    .postedPost {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 5px !important;
+        flex-wrap: wrap;
+        width: unset;
+    }
 
 
 
