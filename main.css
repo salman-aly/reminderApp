@@ -431,6 +431,12 @@ namaz-container */
         display: none;
     }
 
+    .prayer-txt {
+        text-align: center;
+        font-family: 'EB Garamond' !important;
+        width: unset;
+    }
+
 
 
 
