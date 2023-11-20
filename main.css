@@ -20,11 +20,11 @@ body {
     background-color: #F0F0F0;
     overflow-x: hidden;
 }
-
+/* 
 .main-container {
     width: 1280px;
     margin: 0 auto;
-}
+} */
 
 .time {
     margin: 0 auto;
@@ -289,3 +289,136 @@ namaz-container */
 .postedPost-container h4{
     font-size: 18px !important;
 }
+
+
+
+@media only screen and (max-width: 600px) {
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: "clockicons";
+        background-color: #fff;
+        overflow-x: unset !important;
+    }
+
+    .nheader img {
+        height: 120px;
+    }
+    .namaz-container{
+        width: 600px !important;
+    }
+
+    .nheader {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 95px 0px;
+        background-color: #F4ECE1;
+        width: 100% !important;
+        height: 60px;
+        font-family: 'EB Garamond' !important;
+    }
+
+    .nheader h1{
+        font-size: 45px;
+    }
+
+    #time {
+        font-size: 4rem;
+        margin-top: 60px;
+    }
+
+    .time {
+        width: 90%;
+        height: unset;
+    }
+
+    .prayer-txt h2 {
+        font-size: 54px;
+        font-weight: 400;
+    }
+
+    .prayer-txt p {
+        font-size: 34px;
+        padding: 0px 60px;
+        text-align: center;
+    }
+
+    .task-nam-btn button {
+        height: 60px;
+        font-size: 28px;
+        cursor: pointer;
+        border-radius: 25px;
+        border: none;
+        background-color: #056a2c;
+        color: #fff;
+        padding: 10px 25px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+
+    .task-nam-btn {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .namaz-time .flex {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .namaz-time h1 {
+        font-size: 58px;
+    }
+
+    .namz-time-cont {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .namaz-time {
+        background-color: #EFE9E4 !important;
+        height: unset;
+        width: 90%;
+        font-family: 'EB Garamond' !important;
+        margin-bottom: 80px;
+    }
+
+
+    .namz-time-cont .container {
+        background-color: #fff;
+        width: 85%;
+        height: auto;
+        font-size: 16px;
+        text-align: center;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    .namaz-time span {
+        font-size: 45px;
+        color: #008000;
+    }
+    .container h2 {
+        font-size: 32px;
+    }
+
+
+
+
+
+
+
+
+
+
+  }
