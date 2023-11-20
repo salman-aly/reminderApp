@@ -272,6 +272,16 @@ a:-webkit-any-link {
 
 @media only screen and (max-width: 600px) {
 
+    body {
+        height: 550px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Times New Roman', Times, serif;
+        background: rgb(238, 174, 202);
+        background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    }
+
 
     .main {
         height: 500px;
