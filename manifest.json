@@ -1,12 +1,12 @@
 {
-    "name":"PWA Tutorial",
-    "short_name":"PWA",
+    "name":"Salman Reminder App",
+    "short_name":"Reminder App",
     "start_url":"index.html",
     "display":"standalone",
     "background_color":"#5900b3",
     "theme_color":"black",
     "scope": ".",
-    "description":"This is a PWA tutorial.",
+    "description":"Salman Reminder App.",
     "icons":[
     {
     "src":"images/192x192.png",                     
