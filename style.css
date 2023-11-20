@@ -273,7 +273,7 @@ a:-webkit-any-link {
 @media only screen and (max-width: 600px) {
 
     body {
-        height: 550px;
+        height: auto;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -288,6 +288,7 @@ a:-webkit-any-link {
         width: 300px;
         display: flex;
         align-items: center;
+        justify-content: center;
         flex-direction: column;
         border-radius: 110px 0px 0px 0px;
         background: rgb(122, 114, 253);
