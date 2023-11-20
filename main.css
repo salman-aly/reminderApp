@@ -299,7 +299,7 @@ namaz-container */
         padding: 0;
         font-family: "clockicons";
         background-color: #fff;
-        overflow-x: unset !important;
+        overflow-x: hidden !important;
     }
 
     .nheader img {

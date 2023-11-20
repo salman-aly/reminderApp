@@ -60,7 +60,7 @@ body {
     cursor: pointer;
 }
 
-.browser-img label:hover{
+.browser-img label:hover {
     background-color: #ddd;
 }
 
@@ -268,4 +268,101 @@ a:-webkit-any-link {
     font-size: 20px;
     position: absolute !important;
     right: 12% !important;
+}
+
+@media only screen and (max-width: 600px) {
+
+
+    .main {
+        height: 500px;
+        width: 300px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 110px 0px 0px 0px;
+        background: rgb(122, 114, 253);
+        background: linear-gradient(4deg, rgba(122, 114, 253, 1) 38%, rgba(158, 65, 245, 1) 55%, rgba(169, 49, 242, 1) 76%);
+        position: relative;
+        box-shadow: -3px 1px 26px 10px rgba(255, 255, 255, 0.75);
+        -webkit-box-shadow: -3px 1px 26px 10px rgba(255, 255, 255, 0.75);
+        -moz-box-shadow: -3px 1px 26px 10px rgba(255, 255, 255, 0.75);
+    }
+
+    .main>img {
+        height: 90px;
+        width: 90px;
+        border-radius: 50%;
+        margin-top: -50px;
+        margin-bottom: 30px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    input {
+        height: auto !important;
+        width: 95% !important;
+        margin: 5px;
+        border: none;
+        box-shadow: 0px 3px 15px rgb(84, 84, 84, 0.1);
+        /* outline: none; */
+        cursor: pointer;
+        border: 1px solid #1A87EC;
+        border-radius: 2px;
+        font-size: 18px;
+        padding: 8px;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid lightgrey;
+        background: transparent;
+        color: #fff;
+        position: relative;
+        margin-top: 15px;
+    }
+
+    .forget a {
+        color: #fff;
+        text-decoration: none;
+        padding-left: unset;
+    }
+
+    .remeberndforget {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15px;
+        flex-direction: column;
+        display: none;
+    }
+
+    .twoBtn {
+        display: contents;
+        flex-direction: column;
+    }
+
+    .main button {
+        width: 180px;
+        border-radius: 5px;
+        background-color: #ffffff;
+        border: none;
+        margin-top: 15px;
+        color: #000000;
+        text-align: center;
+        text-decoration: none;
+        line-height: 1.8;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 500;
+        margin-left: 5px;
+        padding: 7px;
+    }
+
+
+
+
+    .remeberndforget input{
+        display: flex;
+    }
+
+
+
+
 }
