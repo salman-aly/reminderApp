@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="images/unnamed.png" type="image/x-icon" />
+    <link rel="manifest" href="/manifest.json">
     <link rel="stylesheet" href="main.css" />
     <title>Prayer Reminder - SA</title>
   </head>
@@ -48,7 +49,7 @@
         <div class="namz-time-cont">
           <div class="container">
             <h2>FAJR</h2>
-            <h2><span id="fajar">9:41</span></h2>
+            <h2><span id="fajar">5:32</span></h2>
           </div>
           <div class="container">
             <h2>ZHAR</h2>
@@ -74,20 +75,53 @@
           <div>
             <input type="time" id="timer" />
             <input type="date" id="userDate" />
-            <input
-              type="text"
-              name=""
-              id="inputValue"
-              placeholder="Create your next task here.." />
           </div>
+          <input
+            type="text"
+            class="ml"
+            name=""
+            id="inputValue"
+            placeholder="Create your next task here.." />
           <div class="postBtn">
             <button onclick="createPost()">Create</button>
           </div>
         </div>
       </div>
-      <div class="postedPost" id="postedPost">
-      </div>
+      <div class="postedPost" id="postedPost"></div>
     </div>
+    <script>
+      window.addEventListener("load", () => {
+        registerSW();
+      });
+
+      // Register the Service Worker
+      async function registerSW() {
+        if ("serviceWorker" in navigator) {
+          try {
+            await navigator.serviceWorker.register("serviceworker.js");
+          } catch (e) {
+            console.log("SW registration failed");
+          }
+        }
+      }
+    </script>
+
+    <!-- push notification -->
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("/serviceworker.js")
+          .then(function (registration) {
+            console.log(
+              "Service Worker registered with scope:",
+              registration.scope
+            );
+          })
+          .catch(function (error) {
+            console.error("Service Worker registration failed:", error);
+          });
+      }
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="main.js"></script>

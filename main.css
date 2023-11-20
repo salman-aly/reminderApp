@@ -229,6 +229,10 @@ namaz-container */
     height: 650px;
     margin-left: 160px;
 }
+
+.ml{
+    margin-left: 162px;
+}
 .date-task input{
     height: 40px;
     width: 300px;
