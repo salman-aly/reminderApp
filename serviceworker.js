@@ -1,4 +1,4 @@
-var staticCacheName = "pwa";
+var staticCacheName = "Salman Reminder App";
  
 self.addEventListener("install", function (e) {
   e.waitUntil(

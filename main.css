@@ -422,7 +422,7 @@ namaz-container */
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        padding-top: 30px;
+        padding-top:30px;
         background-image: none;
         background-size: contain;
         background-repeat: no-repeat;
