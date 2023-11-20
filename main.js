@@ -62,26 +62,38 @@ if (getTime === fajr) {
 console.log(fajr)
 
 
+let post = document.getElementById("inputValue");
+let userTime = document.getElementById("timer");
+let userDate = document.getElementById("userDate");
+let postContent = document.getElementById("postedPost");
 
 function createPost() {
-  let userTime = document.getElementById("timer");
-  let userDate = document.getElementById("userDate");
+  if (post.value == "") {
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "Write something about your task!",
+    });
+  } else {
+    postContent.innerHTML += `
+      <div class="postedPost-container">
+        <div class="disValue">
+          <p class="dis">${post.value}</p>
+        </div>
+        <div class="timejsbg">
+          <h4 class="timejs">${userTime.value}</h4>
+        </div>
+        <div class="datebg">
+          <h4 class="date">${userDate.valueAsDate.toDateString()}</h4>
+        </div>
+      </div>
+    `;
 
-  let post = document.getElementById("inputValue");
-  let postContent = document.getElementById("postedPost");
-
-  postContent.innerHTML += `
-   <div class="postedPost-container">
-     <box-icon name='sushi'></box-icon>
-     <p class="dis">${post.value} 
-     </p>
-     <h4 class="timejs">${userTime.value}</h4>
-     <h4 class="date">${userDate.valueAsDate.toDateString()}</h4>
-   </div>
-  `;
-  post.value = "";
-  // console.log(userDate)
+    post.value = "";
+    // console.log(userDate)
+  }
 }
+
 
 
 
