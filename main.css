@@ -412,6 +412,24 @@ namaz-container */
         font-size: 32px;
     }
 
+    .date-task{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .task-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 30px;
+        background-image: url(images/use.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        width: unset !important;
+        display: none;
+    }
 
 
 
