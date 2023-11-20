@@ -5,14 +5,22 @@ const time = moment().format('LTS');
 const date = moment().format('LL');
 
 const now = new Date();
-const targetDate = new Date();
+let getTime = now.getTime()
+// const targetDate = new Date();
+// targetDate.setHours(8, 57, 30, 0);
 
 let clockTime = document.getElementById("time");
 let clockDate = document.getElementById("date");
 let dateClock = document.getElementById("date-js")
 
-const currentTimeString = now.toLocaleTimeString('en-US', { hour12: true });
-const targetTimeString = targetDate.toLocaleTimeString('en-US', { hour12: true });
+let fajr = document.getElementById("fajar")
+let zhar = document.getElementById("zhar")
+let asr = document.getElementById("asr")
+let maghrib = document.getElementById("maghrib")
+let isha = document.getElementById("isha")
+
+// const currentTimeString = now.toLocaleTimeString('en-US', { hour12: true });
+// const targetTimeString = targetDate.toLocaleTimeString('en-US', { hour12: true });
 
 
 setInterval(() => {
@@ -47,27 +55,31 @@ function hideTask() {
 }
 
 
-targetDate.setHours(2, 11, 40, 0);
-
-if (now.getTime() === targetDate.getTime()) {
+if (getTime === fajr) {
   alert("Wake up");
 }
+
+console.log(fajr)
 
 
 
 function createPost() {
-  let userTime = document.getElementById("timedate")
+  let userTime = document.getElementById("timer");
+  let userDate = document.getElementById("userDate");
 
   let post = document.getElementById("inputValue");
-  let postContent = document.getElementById("postedPost")
+  let postContent = document.getElementById("postedPost");
 
   postContent.innerHTML += `
    <div class="postedPost-container">
-     <h4>${post.value}</h4>
-     <h4>${userTime.value}</h4>
-    </div>
+     <p class="dis">${post.value} <box-icon name='sushi'></box-icon>
+     </p>
+     <h4 class="timejs">${userTime.value}<box-icon class='bx' name='time' type='solid' color='#056a2c' ></box-icon></h4>
+     <h4 class="date">${userDate.valueAsDate.toDateString()}</h4>
+   </div>
   `;
-  post.value = ""
+  post.value = "";
+  // console.log(userDate)
 }
 
 

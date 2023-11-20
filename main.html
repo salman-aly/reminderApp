@@ -48,23 +48,23 @@
         <div class="namz-time-cont">
           <div class="container">
             <h2>FAJR</h2>
-            <h2><span>05:32</span></h2>
+            <h2><span id="fajar">9:41</span></h2>
           </div>
           <div class="container">
             <h2>ZHAR</h2>
-            <h2><span>12:17</span></h2>
+            <h2><span id="zhar">12:17</span></h2>
           </div>
           <div class="container">
             <h2>ASR</h2>
-            <h2><span>16:22</span></h2>
+            <h2><span id="asr">16:22</span></h2>
           </div>
           <div class="container">
             <h2>MAGHRIB</h2>
-            <h2><span>17:44</span></h2>
+            <h2><span id="maghrib">17:44</span></h2>
           </div>
           <div class="container">
             <h2>ISHA'A</h2>
-            <h2><span>19:03</span></h2>
+            <h2><span id="isha">19:03</span></h2>
           </div>
         </div>
       </div>
@@ -72,7 +72,8 @@
         <img src="images/todo-list-wizard.png" alt="" />
         <div class="date-task">
           <div>
-            <input type="datetime-local" id="timedate" />
+            <input type="time" id="timer" />
+            <input type="date" id="userDate" />
             <input
               type="text"
               name=""
@@ -88,6 +89,7 @@
       </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
