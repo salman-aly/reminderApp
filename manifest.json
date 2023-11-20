@@ -1,68 +1,22 @@
 {
-  "name": "Salman Tere App",
-  "short_name": "Tere_app",
-  "start_url": "main.html",
-  "display": "standalone",
-  "background_color": "#fff",
-  "theme_color": "#000000",
-  "scope": "https://tere-app-and-web.netlify.app/",
-  "description": "Tere app by SA",
-  "id": "https://tere-app-and-web.netlify.app/com.salmantereapp",
-  "icons": [
+    "name":"PWA Tutorial",
+    "short_name":"PWA",
+    "start_url":"index.html",
+    "display":"standalone",
+    "background_color":"#5900b3",
+    "theme_color":"black",
+    "scope": ".",
+    "description":"This is a PWA tutorial.",
+    "icons":[
     {
-      "src": "images/192x192.png",
-      "sizes": "192x192",
-      "type": "image/png"
+    "src":"images/192x192.png",                     
+    "sizes":"192x192",
+    "type":"image/png"
     },
     {
-      "src": "images/512x512.png",
-      "sizes": "512x512",
-      "type": "image/png"
+    "src":"images/512x512.png",
+    "sizes":"512x512",
+    "type":"image/png"
     }
-  ],
-  "dir": "ltr",
-  "lang": "en",
-  "prefer_related_applications": true,
-  "categories": [
-    "travel"
-  ],
-  "screenshots": [
-    {
-      "src": "images/1280x720.png",
-      "sizes": "1280x720",
-      "type": "image/jpg",
-      "platform": "wide"
-    },
-    {
-      "src": "images/1280.png",
-      "sizes": "1280x800",
-      "type": "image/png"
-    },
-    {
-      "src": "images/750x1334.png",
-      "sizes": "750x1334",
-      "type": "image/png"
-    }
-  ],
-  "orientation": "any",
-  "display_override": [
-    "fullscreen",
-    "window-controls-overlay",
-    "browser",
-    "minimal-ui",
-    "standalone"
-  ],
-  "iarc_rating_id": "4.1",
-  "edge_side_panel": {
-    "preferred_width": 512
-  },
-  "share_target": {
-    "method": "GET",
-    "action": "https://tere-app-and-web.netlify.app/",
-    "params": {
-      "title": "salman",
-      "text": "Tere app",
-      "url": "https://tere-app-and-web.netlify.app/"
-    }
-  }
+  ]
 }
