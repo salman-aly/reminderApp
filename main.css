@@ -275,19 +275,24 @@ namaz-container */
 
 .postedPost-container{
     width: 250px;
-    height: 250px;
     border: 2px solid #008000;
     margin-top: 60px;
-    border-radius: 10px;
+    border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column-reverse;
     font-family: 'EB Garamond' !important;
+    background-color: #fff;
+    margin-bottom: 60px;
 }
 
 .postedPost-container h4{
     font-size: 18px !important;
+}
+
+.postedPost-container .postValue{
+    background-color: #056a2c;
 }
 
 

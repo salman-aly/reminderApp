@@ -72,9 +72,10 @@ function createPost() {
 
   postContent.innerHTML += `
    <div class="postedPost-container">
-     <p class="dis">${post.value} <box-icon name='sushi'></box-icon>
+     <box-icon name='sushi'></box-icon>
+     <p class="dis">${post.value} 
      </p>
-     <h4 class="timejs">${userTime.value}<box-icon class='bx' name='time' type='solid' color='#056a2c' ></box-icon></h4>
+     <h4 class="timejs">${userTime.value}</h4>
      <h4 class="date">${userDate.valueAsDate.toDateString()}</h4>
    </div>
   `;
@@ -90,36 +91,36 @@ function createPost() {
 // Check if the browser supports service workers
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker
-      .register("/serviceworker.js")
-      .then(function (registration) {
-          console.log("Service Worker registered with scope:", registration.scope);
-          return registration.pushManager
-              .getSubscription()
-              .then(function (subscription) {
-                  if (subscription) {
-                      console.log("User is already subscribed:", subscription);
-                  } else {
-                      return registration.pushManager
-                          .subscribe({ userVisibleOnly: true })
-                          .then(function (newSubscription) {
-                              console.log("Subscribed:", newSubscription);
-                          });
-                  }
+    .register("/serviceworker.js")
+    .then(function (registration) {
+      console.log("Service Worker registered with scope:", registration.scope);
+      return registration.pushManager
+        .getSubscription()
+        .then(function (subscription) {
+          if (subscription) {
+            console.log("User is already subscribed:", subscription);
+          } else {
+            return registration.pushManager
+              .subscribe({ userVisibleOnly: true })
+              .then(function (newSubscription) {
+                console.log("Subscribed:", newSubscription);
               });
-      })
-      .catch(function (error) {
-          console.error("Service Worker registration failed:", error);
-      });
+          }
+        });
+    })
+    .catch(function (error) {
+      console.error("Service Worker registration failed:", error);
+    });
 }
 
 // Request notification permission
 if ("Notification" in window) {
   Notification.requestPermission().then(function (permission) {
-      if (permission === "granted") {
-          console.log("Notification permission granted.");
-      } else {
-          console.error("Notification permission denied.");
-      }
+    if (permission === "granted") {
+      console.log("Notification permission granted.");
+    } else {
+      console.error("Notification permission denied.");
+    }
   });
 }
 
