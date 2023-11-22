@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="shortcut icon" href="images/unnamed.png" type="image/x-icon" />
     <link rel="stylesheet" href="main.css" />
     <link rel="manifest" href="manifest.json" />
@@ -10,38 +13,38 @@
   </head>
   <body>
     <div class="namaz-container">
-      <div class="nheader">
+      <div class="nheader animate__animated animate__backInDown">
         <img src="images/unnamed.png" alt="" />
         <h1>Salah - <span>Prayer Reminder</span></h1>
       </div>
-      <div class="time">
+      <div class="time animate__animated animate__backInLeft">
         <div class="currentDate">
           <div id="time"></div>
           <div id="date"></div>
         </div>
       </div>
-      <div class="prayer-txt">
-        <h2>
+      <div class="prayer-txt ">
+        <h2 class="animate__animated animate__backInRight">
           Make prayer a <br />
           lifestyle.
         </h2>
-        <p>
+        <p class="animate__animated animate__backInLeft">
           Get gentle prayer reminders that will transform your prayer life,
           restore your focus on the present moment and awaken a closeness to
           "Allah" during your everyday life.
         </p>
 
         <div class="task-nam-btn">
-          <div class="namz">
+          <div class="namz animate__animated animate__bounceIn">
             <button onclick="hideTask()">Namaz Reminders</button>
           </div>
-          <div class="task">
+          <div class="task animate__animated animate__bounceIn">
             <button onclick="hideNamz()">Create Reminders</button>
           </div>
         </div>
       </div>
 
-      <div class="namaz-time">
+      <div class="namaz-time namz animate__animated animate__zoomInDown">
         <div class="flex">
           <h1>PRAYER TIMES IN <span>KARACHI</span></h1>
           <div class="date-js" id="date-js"></div>
@@ -87,8 +90,7 @@
           </div>
         </div>
       </div>
-      <div class="postedPost" id="postedPost">
-      </div>
+      <div class="postedPost" id="postedPost"></div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>

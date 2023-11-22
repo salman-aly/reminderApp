@@ -1,11 +1,19 @@
-let Div = document.querySelector(".namaz-time");
-let div = document.querySelector(".task-container");
+let post = document.getElementById("inputValue");
+let userTime = document.getElementById("timer");
+let userDate = document.getElementById("userDate");
+let postContent = document.getElementById("postedPost");
+
+
+let namazTime = document.querySelector(".namaz-time");
+let taskContainer = document.querySelector(".task-container");
 
 const time = moment().format('LTS');
 const date = moment().format('LL');
 
 const now = new Date();
 let getTime = now.getTime()
+
+
 // const targetDate = new Date();
 // targetDate.setHours(8, 57, 30, 0);
 
@@ -13,14 +21,14 @@ let clockTime = document.getElementById("time");
 let clockDate = document.getElementById("date");
 let dateClock = document.getElementById("date-js")
 
-let fajr = document.getElementById("fajar")
-let zhar = document.getElementById("zhar")
-let asr = document.getElementById("asr")
-let maghrib = document.getElementById("maghrib")
-let isha = document.getElementById("isha")
+// let fajr = document.getElementById("fajar")
+// let zhar = document.getElementById("zhar")
+// let asr = document.getElementById("asr")
+// let maghrib = document.getElementById("maghrib")
+// let isha = document.getElementById("isha")
 
-// const currentTimeString = now.toLocaleTimeString('en-US', { hour12: true });
-// const targetTimeString = targetDate.toLocaleTimeString('en-US', { hour12: true });
+
+
 
 
 setInterval(() => {
@@ -55,18 +63,19 @@ function hideTask() {
 }
 
 
-if (getTime === fajr) {
-  alert("Wake up");
-}
-
-console.log(fajr)
-console.log(getTime)
 
 
-let post = document.getElementById("inputValue");
-let userTime = document.getElementById("timer");
-let userDate = document.getElementById("userDate");
-let postContent = document.getElementById("postedPost");
+// let namaztimes = ["5:32", "12:17", "16:22", "17:44", "19:03"];
+
+
+// if (getTime === fajr) {
+//   alert("Wake up");
+// }
+// console.log(fajr)
+// console.log(getTime)
+
+
+
 
 function createPost() {
   if (post.value == "") {
@@ -94,7 +103,6 @@ function createPost() {
     // console.log(userDate)
   }
 }
-
 
 
 
