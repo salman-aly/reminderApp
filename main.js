@@ -60,6 +60,7 @@ if (getTime === fajr) {
 }
 
 console.log(fajr)
+console.log(getTime)
 
 
 let post = document.getElementById("inputValue");
