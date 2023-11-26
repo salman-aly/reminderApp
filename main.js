@@ -14,6 +14,10 @@ const now = new Date();
 let getTime = now.getTime()
 
 
+
+
+
+
 // const targetDate = new Date();
 // targetDate.setHours(8, 57, 30, 0);
 
@@ -28,8 +32,50 @@ let dateClock = document.getElementById("date-js")
 // let isha = document.getElementById("isha")
 
 
+let fajr = "05:32:00"
+let zhar = "12:17:00"
+let asr = "16:22:00"
+let maghrib = "17:44:00"
+let isha = "19:03:00"
 
 
+
+
+
+let flag = true;
+
+setInterval(() => {
+
+  let time = moment().format('LTS');
+  let formatedTime = time.slice(0, 8)
+
+  // console.log(formatedTime)
+  if (fajr === formatedTime) {
+    // console.log(fajr, "fajr")
+    flag = false;
+  }
+
+  if (zhar === formatedTime) {
+    // console.log(fajr, "fajr")
+    flag = false;
+  }
+
+  if (asr === formatedTime) {
+    // console.log(fajr, "fajr")
+    flag = false;
+  }
+
+  if (maghrib === formatedTime) {
+    // console.log(fajr, "fajr")
+    flag = false;
+  }
+
+  if (isha === formatedTime) {
+    // console.log(fajr, "fajr")
+    flag = false;
+  }
+
+}, 1000);
 
 setInterval(() => {
   const nowTime = moment().format('LTS');
@@ -61,20 +107,6 @@ function hideTask() {
   let hide = document.querySelector(".task-container");
   hide.style.display = "none"
 }
-
-
-
-
-// let namaztimes = ["5:32", "12:17", "16:22", "17:44", "19:03"];
-
-
-// if (getTime === fajr) {
-//   alert("Wake up");
-// }
-// console.log(fajr)
-// console.log(getTime)
-
-
 
 
 function createPost() {
